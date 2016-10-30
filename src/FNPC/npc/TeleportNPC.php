@@ -45,14 +45,14 @@ class TeleportNPC extends NPC
 			else
 			{
 				$player->teleport(new Position($this->teleport['x'],$this->teleport['y'],$this->teleport['z'],$level));
-				$player->sendMessage('[System] '.TextFormat::GREEN.'传送成功');
+				$player->sendMessage('[System] '.TextFormat::GREEN.'Teleportuji...');
 			}
 			unset($level);
 		}
 		else
 		{
 			$player->teleport(new Vector3($this->teleport['x'],$this->teleport['y'],$this->teleport['z']));
-			$player->sendMessage('[System] '.TextFormat::GREEN.'传送成功');
+			$player->sendMessage('[System] '.TextFormat::GREEN.'Teleportuji...');
 		}
 		unset($player);
 	}

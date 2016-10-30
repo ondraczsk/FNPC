@@ -427,7 +427,7 @@ class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Li
 				break;
 			}
 			NPC::$pool[$args[1]]->teleport($sender);
-			$sender->sendMessage('[NPC] '.TextFormat::GREEN.'传送成功');
+			$sender->sendMessage('[NPC] '.TextFormat::GREEN.'Teleportuji...');
 			break;
 		case 'help':
 			$help=TextFormat::GREEN.'===NPC系统指令帮助==='."\n";
